@@ -1,0 +1,63 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>Incendio</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-list>
+
+	
+
+	</ion-list>
+
+	<form #formulario="ngForm" (ngSubmit)="onSubmitTemplate()">
+
+		<ion-list>
+      <ion-item>
+        <ion-label>Elija garantía</ion-label>
+			<ion-select  item-left [(ngModel)]="usuario.garantia" name="garantia" [selectedText]="codec3"
+				[selectOptions]="{title:'Elige garantia'}">
+				<ion-option *ngFor="let garantia of garantiaIncendio" [value]="codec3">{{garantia.garantia}}
+				</ion-option>
+			</ion-select>
+</ion-item>
+
+      <ion-item>
+        <ion-label>Bomberos?</ion-label>
+			<ion-select  item-left [(ngModel)]="usuario.bomberos" name="bomberos" [selectedText]="bomberos"
+				[selectOptions]="{title:'Interviene bomberos?'}">
+				<ion-option *ngFor="let garantia of intervieneBomberos" [value]="bomberos">{{garantia.intervencion}}
+				</ion-option>
+			</ion-select>
+</ion-item>
+
+<ion-item>
+  <ion-label>Daños por humo?</ion-label>
+			<ion-select  item-left [(ngModel)]="usuario.humo" name="humo" [selectedText]="humo"
+				[selectOptions]="{title:'Daños por humo?'}">
+				<ion-option *ngFor="let garantia of intervieneBomberos" [value]="humo">{{garantia.intervencion}}
+				</ion-option>
+			</ion-select>
+</ion-item>
+
+<ion-item>
+            <ion-label position="stacked">Notas</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+		
+		</ion-list>
+    
+
+
+		<button ion-button  expand="full"  type="submit"  color="primary">Enviar</button>
+
+
+	</form>
+
+
+
+
+
+</ion-content>
