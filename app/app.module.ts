@@ -1,4 +1,5 @@
 import { NgModule, ErrorHandler } from '@angular/core';
+import { Calendar } from '@ionic-native/calendar/ngx';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
@@ -25,7 +26,8 @@ import { AguaComponent } from '../pages/agua/agua.component';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    Calendar
   ],
   bootstrap: [IonicApp],
   entryComponents: [
