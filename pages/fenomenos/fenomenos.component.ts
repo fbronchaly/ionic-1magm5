@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { ContactPage } from '../contact/contact';
+import { Calendar } from '@ionic-native/calendar/ngx';
 
 
 @Component({
@@ -19,7 +20,7 @@ conduccion:""
 }
 
 
-  private garantiaAgua:any[] = [
+  private garantiaLluvia:any[] = [
 {
   garantia:"LLuvia"
 },
@@ -38,7 +39,7 @@ conduccion:""
  
 
 
-constructor(public navCtrl: NavController) {
+constructor(public navCtrl: NavController, calendar: Calendar) {
 
   }
 

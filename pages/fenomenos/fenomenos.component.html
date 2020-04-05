@@ -17,40 +17,24 @@
 		<ion-list>
       <ion-item>
         <ion-label>Elija garantía</ion-label>
-			<ion-select  [(ngModel)]="usuario.agua" name="agua" [selectedText]="agua"
+			<ion-select  [(ngModel)]="usuario.lluvia" name="lluvia" [selectedText]="lluvia"
 				[selectOptions]="{title:'Elige garantia'}">
-				<ion-option *ngFor="let garantia of garantiaAgua" [value]="codec3">{{garantia.garantia}}
+				<ion-option *ngFor="let garantia of garantiaLluvia" [value]="codec3">{{garantia.garantia}}
 				</ion-option>
 			</ion-select>
 </ion-item>
 
-<ion-item>
-  <ion-label>Area donde se produce</ion-label>
-			<ion-select  [(ngModel)]="usuario.area" name="area" [selectedText]="area"
-				[selectOptions]="{title:'Area donde se produce'}">
-				<ion-option *ngFor="let areas of area3" [value]="codec3">{{areas.zonaRotura}}
-				</ion-option>
-			</ion-select>
-</ion-item>
+<ion-content>
+  <div class="ion-padding">
 
+    <ion-calendar [(ngModel)]="date"
+      (onChange)="onChange($event)"
+      [type]="type"
+      [format]="'YYYY-MM-DD'">
+    </ion-calendar>
 
-<ion-item>
-  <ion-label>Tipo de conducción</ion-label>
-			<ion-select  [(ngModel)]="usuario.conduccion" name="conduccion" [selectedText]="conduccion"
-				[selectOptions]="{title:'Tipo de coducción'}">
-				<ion-option *ngFor="let garantia of tipo" [value]="codec3">{{garantia.tipoDeConduccion}}
-				</ion-option>
-			</ion-select>
-</ion-item>
-<ion-item>
-        <ion-label>Asistencia?</ion-label>
-			<ion-select  [(ngModel)]="usuario.asiste" name="asiste" [selectedText]="asiste"
-				[selectOptions]="{title:'Asistencia?'}">
-				<ion-option *ngFor="let garantia of asistencia" [value]="codec3">{{garantia.asisten}}
-				</ion-option>
-			</ion-select>
-</ion-item>
-
+  </div>
+</ion-content>
 
 <ion-item>
             <ion-label position="stacked">Notas</ion-label>

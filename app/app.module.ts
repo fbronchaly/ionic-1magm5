@@ -11,6 +11,7 @@ import { IncendioComponent } from '../pages/incendio/incendio.component';
 import { TabsPage } from '../pages/tabs/tabs';
 import { MenuComponent } from './menu/menu.component';
 import { AguaComponent } from '../pages/agua/agua.component';
+import { FenomenosComponent } from '../pages/fenomenos/fenomenos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AguaComponent } from '../pages/agua/agua.component';
     TabsPage,
     MenuComponent,
     IncendioComponent,
-    AguaComponent
+    AguaComponent,
+    FenomenosComponent
     
   ],
   imports: [
@@ -37,7 +39,8 @@ import { AguaComponent } from '../pages/agua/agua.component';
     HomePage,
     TabsPage,
     IncendioComponent,
-    AguaComponent
+    AguaComponent,
+    FenomenosComponent
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}
