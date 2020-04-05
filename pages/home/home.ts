@@ -20,6 +20,7 @@ usuario = {
 
 {
   garantia:"Incendio"
+  
 },
 {
   garantia:"Explosión"
