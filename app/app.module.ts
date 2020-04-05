@@ -11,7 +11,8 @@ import { IncendioComponent } from '../pages/incendio/incendio.component';
 import { TabsPage } from '../pages/tabs/tabs';
 import { MenuComponent } from './menu/menu.component';
 import { AguaComponent } from '../pages/agua/agua.component';
-import { FenomenosComponent } from '../pages/fenomenos/fenomenos.component';
+import{FenomenosComponent} from '../pages/fenomenos/fenomenos.component';
+
 
 @NgModule({
   declarations: [
