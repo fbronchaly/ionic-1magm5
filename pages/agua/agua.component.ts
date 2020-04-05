@@ -11,10 +11,9 @@ export class AguaComponent  {
    
 input: string;
 usuario = {
-garantia:"",
-tipoDeConduccion:"",
-areaDondeSeProduce:"",
-area:""
+agua:"",
+area:"",
+conduccion:""
 
 }
 
@@ -28,15 +27,16 @@ area:""
 }
 ];
 
-private area:any[] = [
+ private area3:any[] = [
 {
-  areaDondeSeProduce:"Comunitaria"
+  zonaRotura: "comunitaria"
 },
 {
-  areaDondeSeProduce:"Privativa"
+   zonaRotura: "privativa"
 }
-
 ];
+
+
 
 private tipo:any[] = [
 {
