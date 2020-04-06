@@ -7,11 +7,9 @@ import { MyApp } from './app.component';
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
-import { IncendioComponent } from '../pages/incendio/incendio.component';
 import { TabsPage } from '../pages/tabs/tabs';
-import { MenuComponent } from './menu/menu.component';
-import { AguaComponent } from '../pages/agua/agua.component';
-import{FenomenosComponent} from '../pages/fenomenos/fenomenos.component';
+
+
 
 
 @NgModule({
@@ -21,10 +19,7 @@ import{FenomenosComponent} from '../pages/fenomenos/fenomenos.component';
     ContactPage,
     HomePage,
     TabsPage,
-    MenuComponent,
-    IncendioComponent,
-    AguaComponent,
-    FenomenosComponent
+    
     
   ],
   imports: [
@@ -39,9 +34,6 @@ import{FenomenosComponent} from '../pages/fenomenos/fenomenos.component';
     ContactPage,
     HomePage,
     TabsPage,
-    IncendioComponent,
-    AguaComponent,
-    FenomenosComponent
   ],
   providers: [
     {provide: ErrorHandler, useClass: IonicErrorHandler}
